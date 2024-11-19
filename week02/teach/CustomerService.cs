@@ -11,9 +11,12 @@ public class CustomerService {
         // Test Cases
 
         // Test 1
-        // Scenario: 
+        // Scenario: User enters a length of the Queue less than or equal to zero. 
         // Expected Result: 
-        Console.WriteLine("Test 1");
+        Console.WriteLine("Test 1: Max size input of 0");
+        var cs1 = new CustomerService(0);
+        Console.WriteLine($"Max length of queue = {cs1._maxSize}");
+
 
         // Defect(s) Found: 
 
@@ -22,7 +25,9 @@ public class CustomerService {
         // Test 2
         // Scenario: 
         // Expected Result: 
-        Console.WriteLine("Test 2");
+        Console.WriteLine("\nTest 2: Add new customrer");
+        cs1.AddNewCustomer();
+        Console.WriteLine($"Length of Queue: {cs1._queue.Count}");
 
         // Defect(s) Found: 
 
